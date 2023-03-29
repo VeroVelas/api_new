@@ -20,7 +20,7 @@ public class MarkerDaoImp implements MarkerDao {
     @Transactional
     @Override
     public List<MakerModel> getAll(){
-        String hql = "FROM UserModel as u";
+        String hql = "FROM MakerModel as u";
         return (List<MakerModel>) entityManager.createQuery(hql).getResultList();
     }
     @Transactional

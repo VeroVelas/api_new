@@ -20,7 +20,7 @@ public class ProducerDaoImp implements ProducerDao {
     @Transactional
     @Override
     public List<ProducerModel> getAll(){
-        String hql = "FROM UserModel as u";
+        String hql = "FROM ProducerModel as u";
         return (List<ProducerModel>) entityManager.createQuery(hql).getResultList();
     }
     @Transactional
